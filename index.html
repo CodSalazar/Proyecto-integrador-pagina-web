@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Imagen principal del hero -->
+    <style>
+        .hero-food-image {
+            display: block;
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            margin-inline: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.22));
+        }
+
+        @media (max-width: 991.98px) {
+            .hero-food-image {
+                max-width: 470px;
+                margin-top: 1.5rem;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-food-image {
+                max-width: 100%;
+                padding-inline: 0.5rem;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid hero-food-image" src="img/empanadas-hero.png" alt="Tres empanadas horneadas con semillas sobre una tabla de madera">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Specials Section Start -->
+        <section id="specials" class="specials container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Specials</h5>
+                    <h1 class="mb-5">Check Our Specials</h1>
+                </div>
+
+                <div class="row g-4" data-wow-delay="0.1s">
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs flex-column nav-pills border-0">
+                            <li class="nav-item mb-2">
+                                <a class="nav-link active show py-3 px-4" data-bs-toggle="tab" href="#specials-tab-1">Modi sit est</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link py-3 px-4" data-bs-toggle="tab" href="#specials-tab-2">Unde praesentium sed</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link py-3 px-4" data-bs-toggle="tab" href="#specials-tab-3">Pariatur explicabo vel</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link py-3 px-4" data-bs-toggle="tab" href="#specials-tab-4">Nostrum qui quasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3 px-4" data-bs-toggle="tab" href="#specials-tab-5">Iusto ut expedita aut</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 mt-4 mt-lg-0">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="specials-tab-1">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Architecto ut aperiam autem id</h3>
+                                        <p class="fst-italic text-muted">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                                        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/foto de prueba png.png" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="specials-tab-2">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Et blanditiis nemo veritatis excepturi</h3>
+                                        <p class="fst-italic text-muted">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                                        <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/about-1.jpg" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="specials-tab-3">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                                        <p class="fst-italic text-muted">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et.</p>
+                                        <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/about-2.jpg" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="specials-tab-4">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                                        <p class="fst-italic text-muted">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/about-3.jpg" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="specials-tab-5">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                                        <p class="fst-italic text-muted">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/about-4.jpg" alt="" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Specials Section End -->
+
+        <!-- Events Section Start -->
+        <section id="events" class="events section position-relative py-5">
+            <img class="slider-bg position-absolute w-100 h-100 top-0 start-0 object-fit-cover" src="img/events-bg.jpg" alt="" style="z-index: 1; filter: brightness(0.4);">
+
+            <div class="container position-relative" style="z-index: 3;">
+                <div class="text-center wow fadeInUp mb-5" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Events</h5>
+                    <h1 class="text-white">Organize Your Events in Our Restaurant</h1>
+                </div>
+
+                <div class="swiper init-swiper wow fadeInUp" data-wow-delay="0.2s" data-aos-delay="100">
+                    <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": "auto",
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          }
+                        }
+                    </script>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="row gy-4 event-item align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="img/empanadas-hero.png" class="img-fluid rounded shadow" alt="Birthday Parties">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content text-white">
+                                    <h3>Birthday Parties</h3>
+                                    <div class="price my-3">
+                                        <p class="fs-4 text-primary fw-bold"><span>$189</span></p>
+                                    </div>
+                                    <p class="fst-italic text-light">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                                    </ul>
+                                    <p class="text-light mt-3">
+                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End Slider item -->
+
+                        <div class="swiper-slide">
+                            <div class="row gy-4 event-item align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="img/empanadas-hero.png" class="img-fluid rounded shadow" alt="Private Parties">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content text-white">
+                                    <h3>Private Parties</h3>
+                                    <div class="price my-3">
+                                        <p class="fs-4 text-primary fw-bold"><span>$290</span></p>
+                                    </div>
+                                    <p class="fst-italic text-light">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                                    </ul>
+                                    <p class="text-light mt-3">
+                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End Slider item -->
+
+                        <div class="swiper-slide">
+                            <div class="row gy-4 event-item align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="img/events-slider/events-slider-3.jpg" class="img-fluid rounded shadow" alt="Custom Parties">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content text-white">
+                                    <h3>Custom Parties</h3>
+                                    <div class="price my-3">
+                                        <p class="fs-4 text-primary fw-bold"><span>$99</span></p>
+                                    </div>
+                                    <p class="fst-italic text-light">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                                    </ul>
+                                    <p class="text-light mt-3">
+                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End Slider item -->
+
+                    </div>
+                    <div class="swiper-pagination mt-4"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Events Section End -->
+
+        <!-- Gallery Section Start -->
+        <section id="gallery" class="gallery section py-5">
+            <!-- Section Title -->
+            <div class="container text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Gallery</h5>
+                <h1 class="mb-5">Some photos from Our Restaurant</h1>
+            </div><!-- End Section Title -->
+
+            <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-0">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/foto de prueba png.png" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/foto de prueba png.png" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-2.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-3.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-4.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-5.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-6.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-7.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                                <img src="img/gallery/gallery-8.jpg" alt="" class="img-fluid w-100">
+                            </a>
+                        </div>
+                    </div><!-- End Gallery Item -->
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section End -->
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                          <option value="1">People 1</option>
+                                          <option value="2">People 2</option>
+                                          <option value="3">People 3</option>
+                                        </select>
+                                        <label for="select1">No Of People</label>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <!-- (Contenido del Footer original) -->
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
