@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FEA116;
+    --primary: #730C02;
     --light: #F1F8FF;
-    --dark: #730C02;
+    --dark: #F2DAAC;
 }
 
 .ff-secondary {
@@ -659,4 +659,25 @@
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+
+/* Aplicar Nunito Sans como tipografía general para textos */
+body, p, span, li, a, .btn, input, select, textarea {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+/* Aplicar Fraunces para todos los títulos principales y encabezados */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Fraunces', serif !important;
+}
+
+/* Excepción opcional si quieres mantener la tipografía cursiva original del subtítulo secundario */
+.ff-secondary {
+    font-family: 'Pacifico', cursive !important;
+}
+
+/* Color general para todos los párrafos y textos del sitio */
+p, span, li, a {
+    color: #730C02; /* Cambia este código por el color que desees para tus textos */
 }
