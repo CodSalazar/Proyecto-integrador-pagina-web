@@ -172,6 +172,16 @@
     color: rgba(255, 255, 255, .5);
 }
 
+.logo-empresa {
+    display: inline-block;
+    width: 40px;  /* Ajusta el ancho de tu logo */
+    height: 40px; /* Ajusta el alto de tu logo */
+    background-image: url('img/Batidora2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle; /* Ayuda a alinearlo bien con el texto */
+}
 
 /*** Section Title ***/
 .section-title {
